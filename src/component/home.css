@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpapers.com/images/hd/weather-background-jhebw9hr68asyosw.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+    width: fit-content;
+    margin: 60px auto;
+    text-align: center; 
+}
+
+input {
+    height: 60px;
+    font-size: 24px;
+    width: 240px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px 3px;
+    margin: 30px;
+    border: none;
+}
+
+.submit-button {
+    height: 30px;
+    width: 140px;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px 3px;
+    margin: 30px;
+    cursor: pointer; 
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: rgba(43, 100, 186, 0.561);
+}
+
+.error-message, .loading {
+    color: red;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin: 10px auto; 
+}
+
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%; 
+    max-width: 600px; 
+    text-align: center;
+}
+
+.weather-info p {
+    margin: 10px 0;
+}
+
+.weather-info span {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    input, .submit-button {
+        width: 80%; 
+        font-size: 20px; 
+        height: 50px; 
+    }
+
+    .weather-info {
+        width: 95%;
+        padding: 15px; 
+        height: auto; 
+    }
+}

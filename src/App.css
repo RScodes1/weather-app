@@ -1,0 +1,66 @@
+   
+   body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  .router-names {
+    text-align: center; 
+}
+
+   .router-names nav{
+      background-color: aliceblue;
+      color: white;
+      height: 50px;
+      max-width: 1000px; 
+      width: 100%;
+      margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box; 
+     border: 1px black solid;
+     border-radius: 10px 2px;
+   }
+   
+   .router-names nav ul {
+    display: flex;
+    flex-direction: row;
+    gap :30%;
+    justify-content: center;
+   
+   }
+   .router-names nav ul li{
+        list-style-type: none;
+        background-color: aliceblue;
+         padding: 2px 2px;
+         text-decoration: wavy;
+  }
+
+     .router-names nav{
+    
+        background-color: rgb(146, 179, 207);
+        }
+    .router-names nav ul li:hover{
+        color : white;
+        font-weight: bold;
+         background-color: rgb(146, 179, 207);
+         
+}  
+
+
+@media (max-width: 768px) {
+    .router-names nav {
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .router-names nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
+
