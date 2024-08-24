@@ -54,7 +54,6 @@ const checkValidity = (name) =>{
            finally {
             setLoading(false);
           }
-
     }
 
     return (
