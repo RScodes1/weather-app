@@ -14,8 +14,9 @@ const Home = () => {
 const handleLocation = (e) => {
 
     setinputLoc(e.target.value);
-    setError(false);
+    setError(null);
 }
+
 
 const checkValidity = (name) =>{
     return /^[a-zA-Z\s]+$/.test(name) && name.trim().length > 0;
@@ -37,7 +38,7 @@ const checkValidity = (name) =>{
         try {
             // Make the api call
             const response = await axios.get(
-                `https://api.openweathermap.org/data/2.5/weather?q=${inputLoc}&appid=226bc60742d4286f0a7f23177d6daded`
+                `https://api.openweathermap.org/data/2.5/weather?q=${inputLoc}&appid=${process.env.LOC_API_KEY}`
             );
                  const data = response.data;
             setApidata(data);
@@ -46,7 +47,7 @@ const checkValidity = (name) =>{
             
            } catch (error) {
             setError("City not found. Please enter a valid city name.");
-            setShowGif(true); 
+            setShowGif(true);
             setTimeout(() => setShowGif(false), 3000);
             console.log('Error fetching weather data:', error);
         }

@@ -18,8 +18,8 @@ body {
 
 input {
     height: 60px;
-    font-size: 24px;
-    width: 240px;
+    font-size: 20px;
+    width: 340px;
     text-align: center;
     background-color: white;
     color: black;
@@ -28,10 +28,13 @@ input {
     border: none;
 }
 
+input:hover{
+    background-color: aliceblue;
+}
 .submit-button {
-    height: 30px;
+    height: 40px;
     width: 140px;
-    font-size: 24px;
+    font-size: 22px;
     background-color: white;
     color: black;
     border: none;

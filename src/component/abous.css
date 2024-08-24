@@ -1,0 +1,30 @@
+.about-text {
+    color: white;
+    border-radius: 78px 14px;
+    height: auto; 
+    width: 90vw; 
+    max-width: 1000px;
+
+    padding: 23px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 23px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .about-text {
+        font-size: 18px; 
+        width: 95vw; 
+        padding: 15px; 
+    }
+}
+@media (max-width: 480px) {
+    .about-text {
+        font-size: 16px; 
+        width: 95vw;
+        padding: 10px; 
+    }
+}
