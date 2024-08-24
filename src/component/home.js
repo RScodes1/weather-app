@@ -78,7 +78,7 @@ const checkValidity = (name) =>{
                  }
 
                   {!showGif && Apidata !== null &&
-                <div className="gif-container">
+                <div className="gif-container2">
                 <img 
                     height={150} 
                     width={250} 
