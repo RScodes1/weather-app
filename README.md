@@ -7,9 +7,9 @@
 </div>
 
 <div>
-           <img height= 200 width= 400 src="bigshot1.png" alt= "image" >
-     <img height= 200 width= 200 src="bigshot2.png" alt= "image" >
-     <img height= 200 width= 100 src="bigshot3.png" alt= "image" >
+           <img height= 200 width= 100 src="bigshot1.png" alt= "image" >
+     <img height= 200 width= 400 src="bigshot2.png" alt= "image" >
+     <img height= 200 width= 200 src="bigshot3.png" alt= "image" >
 
 </div>
 
