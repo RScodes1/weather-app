@@ -1,6 +1,9 @@
-![Project Overview](shot1.png)
-![Project Overview](shot2.png)
-![Project Overview](shot3.png)
+<div style="height:90px" >
+   ![Project Overview](shot1.png)
+   ![Project Overview](shot2.png)
+   ![Project Overview](shot3.png)
+</div>
+
 
 # Getting Started with Create React App
 
