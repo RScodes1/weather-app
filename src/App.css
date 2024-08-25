@@ -11,25 +11,37 @@
 
   .router-names {
     text-align: center; 
+    
 }
 
-   .router-names nav{
-      background-color: aliceblue;
-      color: white;
-      height: 50px;
-      max-width: 1000px; 
-      width: 100%;
-      margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box; 
+.welcome{
+  color: white;
+   text-align: center;
+  margin-top: 150px;
+   size: 45px;
+}
+
+.router-names nav {
+   position: fixed;          
+   top: 0;                    
+   left: 50%;                
+   transform: translateX(-50%); 
+   background-color: aliceblue;
+   color: white;
+   height: 50px;
+   max-width: 1000px; 
+   width: 100%;
+   margin-right: auto;
+   margin-left: auto;
+     box-sizing: border-box; 
      border: 1px black solid;
-     border-radius: 10px 2px;
-   }
-   
+    border-radius: 10px 2px;
+     z-index: 1000;            
+}
    .router-names nav ul {
     display: flex;
     flex-direction: row;
-    gap :30%;
+    gap :20%;
     justify-content: center;
    
    }
@@ -55,12 +67,16 @@
 @media (max-width: 768px) {
     .router-names nav {
         height: auto; 
-        padding: 10px; 
+        padding: 10px;
     }
-
+ 
     .router-names nav ul {
         flex-direction: column; 
         gap: 10px; 
+    }
+
+    .welcome{
+       margin-top: 200px;
     }
 }
 

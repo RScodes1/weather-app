@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './home.css';
+import History from "./history"; 
 
 const Home = () => {
     const [inputLoc, setInputLoc] = useState("");
@@ -9,7 +10,7 @@ const Home = () => {
     const [error, setError] = useState(null);
     const [showErrorGif, setShowErrorGif] = useState(false);
     const [showSuccessGif, setShowSuccessGif] = useState(false);
-
+    
     const handleLocation = (e) => {
         setInputLoc(e.target.value);
         setError(null);
@@ -29,7 +30,7 @@ const Home = () => {
             setError("Please enter a valid city name (letters and spaces only).");
             setShowErrorGif(true);
             setLoading(false);
-            setTimeout(() => setShowErrorGif(false), 5220); // Display error GIF for 4.2 seconds
+            setTimeout(() => setShowErrorGif(false), 5220); // Display error
             return;
         }
 
@@ -40,12 +41,17 @@ const Home = () => {
             const data = response.data;
             setApiData(data);
             setShowSuccessGif(true);
-            setTimeout(() => setShowSuccessGif(false), 2900); // Display success GIF for 6 seconds
+            setTimeout(() => setShowSuccessGif(false), 2900); // Display success GIF
+
+            const storedHistory = JSON.parse(localStorage.getItem("weatherHistory")) || [];
+            const updatedHistory = [...storedHistory, data];
+            localStorage.setItem("weatherHistory", JSON.stringify(updatedHistory));
+
             console.log("Weather data:", apiData);
         } catch (error) {
             setError("City not found. Please enter a valid city name.");
             setShowErrorGif(true);
-            setTimeout(() => setShowErrorGif(false), 5220); // Display error GIF for 4.2 seconds
+            setTimeout(() => setShowErrorGif(false), 5220); // Display error
             console.log('Error fetching weather data:', error);
         } finally {
             setLoading(false);
@@ -95,12 +101,15 @@ const Home = () => {
 
             {apiData && !loading && !error && (
                 <div className="weather-info">
-                    <p>Temperature: <span>{(apiData.main.temp - 273.15).toFixed(2)}'C</span></p>
-                    <p>Humidity: <span>{apiData.main.humidity}%</span></p>
-                    <p>Wind Speed: <span>{(apiData.wind.speed * (5 / 18)).toFixed(2)} km/h</span></p>
-                    <p>Brief Weather Description: <span>{apiData.weather[0].description}</span></p>
+                    <p> <span style={{textDecoration: "underline"}} >City</span> : <span>{apiData.name}</span></p>
+                                <p> <span style={{textDecoration: "underline"}} >Temperature</span> : <span>{(apiData.main.temp - 273.15).toFixed(2)}'C</span></p>
+                                <p> <span style={{textDecoration: "underline"}} >Humidity</span> : <span>{apiData.main.humidity}%</span></p>
+                                <p> <span style={{textDecoration: "underline"}} >Wind Speed</span> : <span>{(apiData.wind.speed * (5 / 18)).toFixed(2)} km/h</span></p>
+                                <p> <span style={{textDecoration: "underline"}} >Weather Description</span> : the weather has been in a condition as <span>{apiData.weather[0].description}</span></p>
                 </div>
             )}
+
+
         </div>
     );
      //   {/* <p></p>
