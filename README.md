@@ -13,6 +13,7 @@
 
 </div>
 
+### `Third party api open weather app is used to give fetch the information. For the frontend React is used and hooks like usestate, useeffect to manage the state and update the components.`
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
