@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './home.css';
-import History from "./history"; 
 
 const Home = () => {
     const [inputLoc, setInputLoc] = useState("");
