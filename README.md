@@ -1,16 +1,4 @@
-<div>
-    <img height= 200 width = 400 src= "shot1.png" alt="phone" >
-      <img height= 200 width = 200 src= "shot2.png" alt="phone" >
-      <img height= 200 width = 100 src= "shot3.png" alt="phone" >
-   
-</div>
 
-<div>
-    <img height= 200 width = 400 src= "shot1.png" alt="phone" >
-      <img height= 200 width = 200 src= "shot2.png" alt="phone" >
-      <img height= 200 width = 100 src= "shot3.png" alt="phone" >
-   
-</div>
 
 # Getting Started with Create React App
 
