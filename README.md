@@ -1,4 +1,4 @@
-<div style="height:90px" >
+<div>
    ![Project Overview](shot1.png)
    ![Project Overview](shot2.png)
    ![Project Overview](shot3.png)
