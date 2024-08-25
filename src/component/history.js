@@ -16,7 +16,7 @@ const History = () => {
             <div>
                 <h1>Weather History</h1>
                 {weatherHistory.length === 0 ? (
-                    <p>No history available.</p>
+                    <p style={{color:"white", fontSize:"16px"}} >No history available.</p>
                 ) : (
                     <div className="history-container">
                         {weatherHistory.map((data, index) => (
