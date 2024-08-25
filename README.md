@@ -1,15 +1,15 @@
 <div>
-     <img src="shot1.png" alt= "image" >
-          <img src="shot2.png" alt= "image" >
-       <img src="shot3.png" alt= "image" >
+     <img height= 200 width= 400 src="shot1.png" alt= "image" >
+          <img height= 200 width= 200 src="shot2.png" alt= "image" >
+       <img height= 200 width= 100 src="shot3.png" alt= "image" >
 
 
 </div>
 
 <div>
-           <img src="bigshot1.png" alt= "image" >
-     <img src="bigshot2.png" alt= "image" >
-     <img src="bigshot3.png" alt= "image" >
+           <img height= 200 width= 400 src="bigshot1.png" alt= "image" >
+     <img height= 200 width= 200 src="bigshot2.png" alt= "image" >
+     <img height= 200 width= 100 src="bigshot3.png" alt= "image" >
 
 </div>
 
