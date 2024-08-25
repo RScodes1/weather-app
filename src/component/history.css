@@ -42,6 +42,7 @@ body {
 @media (max-width :in-range(400px-786px)){
 
     .history-container {
+        
             margin-left: 110px; 
      }
     
