@@ -1,7 +1,7 @@
 <div>
-    <img height= 150 width = 300 src= "shot1.png" alt="phone" >
-      <img height= 100 width = 50 src= "shot2.png" alt="phone" >
-      <img height= 200 width = 200 src= "shot3.png" alt="phone" >
+    <img height= 200 width = 400 src= "shot1.png" alt="phone" >
+      <img height= 200 width = 200 src= "shot2.png" alt="phone" >
+      <img height= 100 width = 50 src= "shot3.png" alt="phone" >
    
 </div>
 
