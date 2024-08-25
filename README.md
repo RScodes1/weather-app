@@ -1,8 +1,8 @@
 <div>
-    <img src= "shot1.png" alt="phone" >
-   ![Project Overview](shot1.png)
-   ![Project Overview](shot2.png)
-   ![Project Overview](shot3.png)
+    <img height= 100 width = 100 src= "shot1.png" alt="phone" >
+      <img src= "shot2.png" alt="phone" >
+      <img src= "shot3.png" alt="phone" >
+   
 </div>
 
 
