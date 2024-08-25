@@ -1,4 +1,17 @@
+<div>
+     <img src="shot1.png" alt= "image" >
+          <img src="shot2.png" alt= "image" >
+       <img src="shot3.png" alt= "image" >
 
+
+</div>
+
+<div>
+           <img src="bigshot1.png" alt= "image" >
+     <img src="bigshot2.png" alt= "image" >
+     <img src="bigshot3.png" alt= "image" >
+
+</div>
 
 # Getting Started with Create React App
 
