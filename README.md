@@ -1,6 +1,6 @@
-![Project Overview](./images/project-overview.png)
-![Project Overview](./images/project-overview.png)
-![Project Overview](./images/project-overview.png)
+![Project Overview](shot1.jpg)
+![Project Overview](shot2.jpg)
+![Project Overview](shot3.jpg)
 
 # Getting Started with Create React App
 
